@@ -7,7 +7,7 @@ import 'aos/dist/aos.css'
 function App() {
   useEffect(() => {
     AOS.init({
-      duration: 500,
+      duration: 800,
       easing: 'ease-in-out',
       once: true,
     })
@@ -48,7 +48,7 @@ function App() {
 
       {/* Hero Section */}
       <section id="home" className="relative h-screen flex items-center justify-center bg-amber-800 bg-opacity-50">
-        <div className="absolute inset-0 bg-[url('/hero.jpeg')] bg-cover bg-center opacity-70"></div>
+        <div className="absolute inset-0 bg-[url('https://images.unsplash.com/photo-1445116572660-236099ec97a0?ixlib=rb-1.2.1&auto=format&fit=crop&w=1951&q=80')] bg-cover bg-center opacity-70"></div>
         <div className="container mx-auto text-center relative z-10 px-4" data-aos="fade-up">
           <h1 className="text-5xl md:text-7xl font-bold text-amber-50 mb-6 font-dancing-script">Rustic & Cozy</h1>
           <p className="text-xl md:text-2xl text-amber-100 mb-8 max-w-2xl mx-auto">Where every cup tells a story and every moment feels like home</p>
@@ -62,7 +62,7 @@ function App() {
           <h2 className="text-3xl md:text-4xl font-bold text-center text-amber-900 mb-12 font-dancing-script" data-aos="fade-up">Our Story</h2>
           <div className="flex flex-col md:flex-row items-center gap-8">
             <div className="md:w-1/2" data-aos="fade-right">
-              <img src="/story.jpeg" alt="Coffee beans" className="rounded-lg shadow-xl w-full h-auto max-h-96 object-cover" />
+              <img src="https://images.unsplash.com/photo-1517705008128-361805f42e86?ixlib=rb-1.2.1&auto=format&fit=crop&w=1934&q=80" alt="Coffee beans" className="rounded-lg shadow-xl w-full h-auto max-h-96 object-cover" />
             </div>
             <div className="md:w-1/2" data-aos="fade-left">
               <p className="text-amber-800 mb-4 text-lg">Founded in 2015, Rustic & Cozy began as a dream to create a space where coffee lovers could feel completely at home.</p>
@@ -80,7 +80,7 @@ function App() {
       <section id="menu" className="py-16 bg-amber-50">
         <div className="container mx-auto px-4">
           <h2 className="text-3xl md:text-4xl font-bold text-center text-amber-900 mb-12 font-dancing-script" data-aos="fade-up">Our Menu</h2>
-
+          
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
             {/* Coffee Menu */}
             <div className="bg-white p-6 rounded-lg shadow-md border-l-4 border-amber-700" data-aos="fade-up" data-aos-delay="100">
@@ -116,7 +116,7 @@ function App() {
                 </div>
               </div>
             </div>
-
+            
             {/* Espresso Menu */}
             <div className="bg-white p-6 rounded-lg shadow-md border-l-4 border-amber-700" data-aos="fade-up" data-aos-delay="200">
               <h3 className="text-2xl font-bold text-amber-900 mb-4 font-dancing-script">Espresso Drinks</h3>
@@ -151,7 +151,7 @@ function App() {
                 </div>
               </div>
             </div>
-
+            
             {/* Pastries Menu */}
             <div className="bg-white p-6 rounded-lg shadow-md border-l-4 border-amber-700" data-aos="fade-up" data-aos-delay="300">
               <h3 className="text-2xl font-bold text-amber-900 mb-4 font-dancing-script">Homemade Pastries</h3>
@@ -194,25 +194,25 @@ function App() {
       <section id="gallery" className="py-16 bg-amber-100">
         <div className="container mx-auto px-4">
           <h2 className="text-3xl md:text-4xl font-bold text-center text-amber-900 mb-12 font-dancing-script" data-aos="fade-up">Our Space</h2>
-
+          
           <div className="grid grid-cols-2 md:grid-cols-3 gap-4">
-            <div className="overflow-hidden rounded-lg shadow-md" data-aos="fade-up">
-              <img src="/our-space-1.jpeg" alt="Coffee shop interior" className="w-full h-48 md:h-64 object-cover hover:scale-105 transition duration-500" />
+            <div className="overflow-hidden rounded-lg shadow-md" data-aos="zoom-in">
+              <img src="https://images.unsplash.com/photo-1518455027359-f3f8164ba6bd?ixlib=rb-1.2.1&auto=format&fit=crop&w=1934&q=80" alt="Coffee shop interior" className="w-full h-48 md:h-64 object-cover hover:scale-105 transition duration-500" />
             </div>
-            <div className="overflow-hidden rounded-lg shadow-md" data-aos="fade-up" data-aos-delay="100">
-              <img src="/our-space-2.jpeg" alt="Coffee preparation" className="w-full h-48 md:h-64 object-cover hover:scale-105 transition duration-500" />
+            <div className="overflow-hidden rounded-lg shadow-md" data-aos="zoom-in" data-aos-delay="100">
+              <img src="https://images.unsplash.com/photo-1554118811-1e0d58224f24?ixlib=rb-1.2.1&auto=format&fit=crop&w=1934&q=80" alt="Coffee preparation" className="w-full h-48 md:h-64 object-cover hover:scale-105 transition duration-500" />
             </div>
-            <div className="overflow-hidden rounded-lg shadow-md" data-aos="fade-up" data-aos-delay="100">
-              <img src="/our-space-3.jpeg" alt="Cozy seating area" className="w-full h-48 md:h-64 object-cover hover:scale-105 transition duration-500" />
+            <div className="overflow-hidden rounded-lg shadow-md" data-aos="zoom-in" data-aos-delay="200">
+              <img src="https://images.unsplash.com/photo-1463797221720-6b07e6426c24?ixlib=rb-1.2.1&auto=format&fit=crop&w=2071&q=80" alt="Cozy seating area" className="w-full h-48 md:h-64 object-cover hover:scale-105 transition duration-500" />
             </div>
-            <div className="overflow-hidden rounded-lg shadow-md" data-aos="fade-up" data-aos-delay="100">
-              <img src="/our-space-4.jpeg" alt="Coffee beans closeup" className="w-full h-48 md:h-64 object-cover hover:scale-105 transition duration-500" />
+            <div className="overflow-hidden rounded-lg shadow-md" data-aos="zoom-in" data-aos-delay="100">
+              <img src="https://images.unsplash.com/photo-1517701550927-30cf4ba1dba5?ixlib=rb-1.2.1&auto=format&fit=crop&w=2070&q=80" alt="Coffee beans closeup" className="w-full h-48 md:h-64 object-cover hover:scale-105 transition duration-500" />
             </div>
-            <div className="overflow-hidden rounded-lg shadow-md" data-aos="fade-up" data-aos-delay="100">
-              <img src="/our-space-5.jpeg" alt="Barista making coffee" className="w-full h-48 md:h-64 object-cover hover:scale-105 transition duration-500" />
+            <div className="overflow-hidden rounded-lg shadow-md" data-aos="zoom-in" data-aos-delay="200">
+              <img src="https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?ixlib=rb-1.2.1&auto=format&fit=crop&w=2070&q=80" alt="Barista making coffee" className="w-full h-48 md:h-64 object-cover hover:scale-105 transition duration-500" />
             </div>
-            <div className="overflow-hidden rounded-lg shadow-md" data-aos="fade-up" data-aos-delay="100">
-              <img src="/our-space-6.jpeg" alt="Coffee on wooden table" className="w-full h-48 md:h-64 object-cover hover:scale-105 transition duration-500" />
+            <div className="overflow-hidden rounded-lg shadow-md" data-aos="zoom-in" data-aos-delay="300">
+              <img src="https://images.unsplash.com/photo-1445116572660-236099ec97a0?ixlib=rb-1.2.1&auto=format&fit=crop&w=1951&q=80" alt="Coffee on wooden table" className="w-full h-48 md:h-64 object-cover hover:scale-105 transition duration-500" />
             </div>
           </div>
         </div>
@@ -222,7 +222,7 @@ function App() {
       <section className="py-16 bg-amber-800 text-amber-50">
         <div className="container mx-auto px-4">
           <h2 className="text-3xl md:text-4xl font-bold text-center mb-12 font-dancing-script" data-aos="fade-up">What Our Customers Say</h2>
-
+          
           <div className="grid md:grid-cols-3 gap-8">
             <div className="bg-amber-700 p-6 rounded-lg shadow-lg" data-aos="fade-up" data-aos-delay="100">
               <div className="flex items-center mb-4">
@@ -236,8 +236,8 @@ function App() {
               </div>
               <p className="italic">"The Ethiopian Yirgacheffe here is unlike any coffee I've tasted elsewhere. The atmosphere makes it my favorite place to work remotely."</p>
             </div>
-
-            <div className="bg-amber-700 p-6 rounded-lg shadow-lg" data-aos="fade-up" data-aos-delay="150">
+            
+            <div className="bg-amber-700 p-6 rounded-lg shadow-lg" data-aos="fade-up" data-aos-delay="200">
               <div className="flex items-center mb-4">
                 <div className="w-12 h-12 rounded-full bg-amber-600 flex items-center justify-center text-xl font-bold mr-4">SM</div>
                 <div>
@@ -249,8 +249,8 @@ function App() {
               </div>
               <p className="italic">"I come for the coffee but stay for the ambiance. The cinnamon rolls are to die for! Feels like visiting a friend's cozy living room."</p>
             </div>
-
-            <div className="bg-amber-700 p-6 rounded-lg shadow-lg" data-aos="fade-up" data-aos-delay="200">
+            
+            <div className="bg-amber-700 p-6 rounded-lg shadow-lg" data-aos="fade-up" data-aos-delay="300">
               <div className="flex items-center mb-4">
                 <div className="w-12 h-12 rounded-full bg-amber-600 flex items-center justify-center text-xl font-bold mr-4">TP</div>
                 <div>
@@ -270,7 +270,7 @@ function App() {
       <section id="contact" className="py-16 bg-amber-50">
         <div className="container mx-auto px-4">
           <h2 className="text-3xl md:text-4xl font-bold text-center text-amber-900 mb-12 font-dancing-script" data-aos="fade-up">Visit Us</h2>
-
+          
           <div className="flex flex-col md:flex-row gap-8">
             <div className="md:w-1/2">
               <div className="bg-white p-6 rounded-lg shadow-md mb-8" data-aos="fade-right">
@@ -278,7 +278,7 @@ function App() {
                 <p className="text-amber-800 mb-4">123 Woodland Avenue<br />Greenville, SC 29601</p>
                 <p className="text-amber-800">Parking available in the rear</p>
               </div>
-
+              
               <div className="bg-white p-6 rounded-lg shadow-md" data-aos="fade-right" data-aos-delay="100">
                 <h3 className="text-2xl font-bold text-amber-900 mb-4 font-dancing-script">Hours</h3>
                 <div className="space-y-2 text-amber-800">
@@ -297,7 +297,7 @@ function App() {
                 </div>
               </div>
             </div>
-
+            
             <div className="md:w-1/2" data-aos="fade-left">
               <div className="bg-white p-6 rounded-lg shadow-md h-full">
                 <h3 className="text-2xl font-bold text-amber-900 mb-4 font-dancing-script">Get In Touch</h3>
